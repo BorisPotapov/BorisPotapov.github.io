@@ -141,7 +141,9 @@
             <p style="font-size: 14px; color: #64748b;">Здесь тестируются асинхронные HTTP-запросы, перехват сети (Network Mocking) и статусы загрузки.</p>
             
             <textarea id="sourceText" placeholder="Введите текст на английском (например, 'Playwright is awesome')..."></textarea>
-            onclick="translateText()">Перевести слово</button>
+            <button class="btn" id="translateBtn" onclick="translateText()">Перевести слово</button>
+            <div id="transStatus" class="status">Статус: Ожидание ввода</div>
+
             
             <div id="transStatus" class="status">Статус: Ожидание ввода</div>
             <div id="transResult" class="result-box">Здесь отобразится перевод...</div>
