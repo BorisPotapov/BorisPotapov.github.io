@@ -63,13 +63,13 @@
             
             <div class="section">
                 <label>1. Динамическая кнопка (ID меняется при генерации)</label>
-                <button class="btn" id="btn-dynamic-init" onclick="generateDynamicId()">Сгенерировать случайный ID</button>
+                <button class="btn" id="btn-dynamic-init" onclick="generateDynamicId()">Сгенерировать случайный ID БАГ</button>
                 <div id="dynamic-btn-container" style="margin-top: 10px;"></div>
             </div>
 
             <div class="section">
                 <label for="username">2. Текстовое поле и чекбокс (Кнопка зависит от них)</label>
-                <input type="text" id="username" placeholder="Введите имя..." oninput="checkFormUnlock()">
+                <input type="text" id="username" placeholder="Введите имя... БАГ" oninput="checkFormUnlock()">
                 <label style="font-weight: normal; display: inline-flex; align-items: center; gap: 8px;">
                     <input type="checkbox" id="agreeCheckbox" onchange="checkFormUnlock()"> Я согласен с правилами
                 </label>
@@ -81,9 +81,9 @@
             <div class="section">
                 <label for="selectVehicle">3. Выпадающий список (Dropdown)</label>
                 <select id="selectVehicle" onchange="document.getElementById('selectResult').innerText = 'Выбрано: ' + this.value">
-                    <option value="">-- Выберите транспорт --</option>
-                    <option value="car">Автомобиль</option>
-                    <option value="bike">Мотоцикл</option>
+                    <option value="">-- Выберите любой транспорт БАГ--</option>
+                    <option value="car">Автомобиль или микроавтобус БАГ</option>
+                    <option value="bike">Мотоцикл или велосипед БАГ</option>
                     <option value="plane">Самолет</option>
                 </select>
                 <div id="selectResult" class="status"></div>
@@ -138,7 +138,7 @@
         <!-- Вкладка 4: Переводчик (API Запросы) -->
         <div id="translator" class="tab-content">
             <h2>Интеграция с внешним API (Переводчик EN → RU)</h2>
-            <p style="font-size: 14px; color: #64748b;">Здесь тестируются асинхронные HTTP-запросы, перехват сети (Network Mocking) и статусы загрузки.</p>
+            <p style="font-size: 14px; color: #64748b;">Здесь тестируются асинхронные HTTP-запросы, перехват сети (Network Mocking) и статусы загрузки БАГ</p>
             
             <textarea id="sourceText" placeholder="Введите текст на английском (например, 'Playwright is awesome')..."></textarea>
             <button class="btn" id="translateBtn" onclick="translateText()">Перевести слово</button>
